@@ -1,11 +1,11 @@
 import React from "react";
-import { useform } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import ErrorMessage from "./ErrorMessage";
 
-const scehma = yup.object().shape({
+const schema = yup.object().shape({
     firstName: yup
         .string()
         .required("Firstname is required"),
@@ -22,5 +22,47 @@ const scehma = yup.object().shape({
     message: yup
         .string()
         .required("A message is required")
-        .max(150, "")
+        .max(150, "A message is required")
 });
+
+function Contact() {
+    const { register, handleSubmit, errors } = useForm({
+        validationSchema: schema
+    });
+
+    function onSubmit(data) {
+    //     console.log("data", data);
+    }
+
+    return (
+        <Form onSubmit={handleSubmit(onSubmit)}>
+            <Form.Group>
+                <Form.Label>Name</Form.Label>
+                <Form.Control name="Name" placeholder="Name" ref={register} />
+                {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
+            </Form.Group>
+
+            <Form.Group>
+                <Form.Label>Email</Form.Label>
+                <Form.Control email="Email" placeholder="Email" ref={register} />
+                {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
+            </Form.Group>
+
+            <Form.Group>
+                <Form.Label>Name</Form.Label>
+                <Form.Control phone="Phone" placeholder="Phone" ref={register} />
+                {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
+            </Form.Group>
+
+            <Form.Group>
+                <Form.Label>Get in touch!</Form.Label>
+                <Form.Control message="Message" placeholder="Get in touch!" ref={register} />
+                {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
+            </Form.Group>
+
+            <Button type="submit">Get in touch!</Button>
+        </Form>
+    );
+}
+
+export default Contact;
