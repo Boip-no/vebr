@@ -8,11 +8,8 @@ import {
         } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import SliderContainer from "../slider/SliderContainer";
-import Work from "../work/Work";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
-
-
 
 function Layout({ children }) {
     return (
@@ -23,9 +20,6 @@ function Layout({ children }) {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <a href="#work" className="nav-link">
-                            Work
-                            </a>
                             <a href="#contact" className="nav-link">
                             Contact
                             </a>
@@ -34,7 +28,6 @@ function Layout({ children }) {
                 </Navbar>
                 <Container>
                     <Switch>
-                        <Route path="/Work" exact compontent={Work} />
                         <Route path="/Contact" exact compontent={Contact} />
                     </Switch>
                 

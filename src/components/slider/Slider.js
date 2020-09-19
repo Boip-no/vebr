@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Image from "../../images/stars.jpg"
 
 function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
 
@@ -7,8 +8,8 @@ function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
         <Carousel>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    className="d-block"
+                    src={Image}
                     alt="Third slide"
                 />
                 <Carousel.Caption>
@@ -19,8 +20,8 @@ function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    className="d-block"
+                    src={Image}
                     alt="Third slide"
                 />
                 <Carousel.Caption>
