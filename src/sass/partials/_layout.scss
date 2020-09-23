@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    background-color: $background-color;
+    max-width: 600px;
+}
+
+.logo {
+    width: 20%;
+}
+
+h3 {
+    font-family: $header-font;
+    font-size: 37px;
+}
