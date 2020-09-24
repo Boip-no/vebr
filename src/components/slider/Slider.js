@@ -2,12 +2,14 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "../../images/stars.jpg"
 import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 
 function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
 
     return (
-        <Container id="references">
-            <h3>References</h3>
+        <Container className="justify-content-md-center">
+            <h3 id="references" className="background">References</h3>
+            <Col xs-lg="2">
                 <Carousel>
                     <Carousel.Item className="carousel__item">
                         <img
@@ -34,6 +36,7 @@ function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+            </Col>
         </Container>
     );
 }
