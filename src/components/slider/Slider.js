@@ -10,7 +10,7 @@ function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
         <Container className="justify-content-md-center">
             <h3 id="references" className="background">References</h3>
             <Col xs-lg="2">
-                <Carousel>
+                <Carousel className="p-5">
                     <Carousel.Item className="carousel__item">
                         <img
                             className="carousel__item--img d-block"
@@ -29,7 +29,7 @@ function Slider({ client1, firm1, content1, client2, firm2, content2 }) {
                             src={Image}
                             alt="Third slide"
                         />
-                        <Carousel.Caption className="carousel__caption">
+                        <Carousel.Caption className="carousel__caption w-100">
                             <p className="carousel__caption--content">{client2}</p>
                             <h5 className="carousel__caption--content">{content2}</h5>
                             <p className="carousel__caption--content">{firm2}</p>

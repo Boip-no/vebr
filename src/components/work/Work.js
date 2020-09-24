@@ -3,10 +3,10 @@ import { Accordion, Card, Container, Button } from 'react-bootstrap';
 
 function Work(){
     return(
-        <Container id="work">
+        <Container id="work" >
             <div>
                 <h3>Work</h3>
-                    <Accordion defaultActiveKey="0">
+                    <Accordion className="p-5" defaultActiveKey="0">
                         <Card>
                             <Card.Header className="card__header">
                                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
@@ -33,7 +33,7 @@ function Work(){
                         </Card>
                     </Accordion>
                 <h3>Knowledge</h3>
-                    <Accordion defaultActiveKey="1">
+                    <Accordion className="p-5" defaultActiveKey="1">
                             <Card>
                                 <Card.Header className="card__header">
                                     <Accordion.Toggle as={Button} variant="link" eventKey="3">
@@ -45,6 +45,7 @@ function Work(){
                                         <p className="card__body--p">Envo</p>
                                         <p className="card__body--p">Envo</p>
                                         <p className="card__body--p">Envo</p>
+                                        <Button>see more</Button>
                                     </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
@@ -59,6 +60,7 @@ function Work(){
                                         <p className="card__body--p">Envo</p>
                                         <p className="card__body--p">Envo</p>
                                         <p className="card__body--p">Envo</p>
+                                        <Button>see more</Button>
                                     </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
@@ -73,6 +75,7 @@ function Work(){
                                         <p className="card__body--p">JIRA</p>
                                         <p className="card__body--p">Envo</p>
                                         <p className="card__body--p">Envo</p>
+                                        <Button>see more</Button>
                                     </Card.Body>
                                     
                                 </Accordion.Collapse>

@@ -1,15 +1,15 @@
 .carousel__item {
-    &--img {
-        width: 100%;
-    }
+    width: fit-content;
+    
+        &--img {
+            width: 100%;
+        }
 }
 
 .carousel__caption {
-    &--content{
-        color: white;
-    }
-}
-
-.carousel-caption {
     text-align: left;
+    
+        &--content{
+            color: white;
+        }
 }

@@ -1,9 +1,7 @@
 .card__header {
     align-items: center;
     background-color: $dark-blue;
-    border: 2 2 $wow-blue;
-    font-size: 25px;
-    padding: 10px 200px ;
+    border: 10px 10px 5px 0px rgba(137,178,210,1);
     .btn-link {
         color: white;
         text-decoration: none;
@@ -18,9 +16,16 @@
     background-color: $dark-blue;
     box-shadow: 10px 10px 5px 0px rgba(137,178,210,1);
     color: $background-color;
-    padding: 10px 200px ;
         
         &--p {
-            box-shadow: $light-blue;   
+            text-shadow: $light-blue;   
+        }
+        Button {
+            background-color: $dark-blue;
+            border: 10px $wow-blue;
+            &:hover {
+                background-color: $dark-blue;
+                font-style: italic;
+            }
         }
 }

@@ -3,16 +3,18 @@ import Alert from "react-bootstrap/Alert";
 
 function Footer() {
     return (
-        <footer className="icons__footer">
-            <Alert.Link href="https://github.com/search?q=Sprtn"> 
+        <footer className="icons__footer text-center py-3">
+            <a href="https://github.com/search?q=Sprtn"> 
                 <i className="icons__footer--item fab fa-github-square"></i>
-            </Alert.Link>
-            <Alert.Link href="https://www.linkedin.com/in/vegard-pihl-bratteng-6ab846b7/"> 
+            </a>
+            <a href="https://www.linkedin.com/in/vegard-pihl-bratteng-6ab846b7/"> 
                 <i className="icons__footer--item fab fa-linkedin"></i>
-            </Alert.Link>
+            </a>
             <p>
-                Copyright 2020 
-                <Alert.Link href="http://boip.no/">BOIP</Alert.Link>
+            &copy; {new Date().getFullYear()} Copyright: 
+            </p>
+            <p>
+                <a href="http://boip.no/">BOIP</a>
             </p>
         </footer>
     );

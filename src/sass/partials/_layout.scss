@@ -1,9 +1,18 @@
 body {
     font-family: $subtitle-font;
+    background-color: $background-color;
+}
+
+h1 {
+    color: $wow-blue;
+    text-shadow: #4A3C29;
+    font-size: 4em;
+    padding: 10px 5px;
 }
 
 h3 {
     font-family: $header-font;
-    font-size: 37px;
+    font-size: 3em;
     background-color: $light-blue;
+    text-align: center;
 }

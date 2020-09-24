@@ -1,12 +1,7 @@
 .contact {
-
-    &__form {
-
-        &__group {
-        
-            &--label {
-                color: $dark-blue;
-            }
-        }
+       
+    &__form--control {
+        background-color: $dark-blue; 
+        color: $background-color;   
     }
 }

@@ -1,8 +1,9 @@
 .icons__footer {
-
+    background-color: #D5D9DB;
                 &--item {
                     color: $dark-blue;
-                    width: 30px;
-                }    
+                    font-size: 2em;
+                    padding: 7px;
+                }   
 }
 
