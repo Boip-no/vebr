@@ -1,5 +1,4 @@
 import React from "react";
-import Alert from "react-bootstrap/Alert";
 
 function Footer() {
     return (
@@ -11,10 +10,11 @@ function Footer() {
                 <i className="icons__footer--item fab fa-linkedin"></i>
             </a>
             <p>
-            &copy; {new Date().getFullYear()} Copyright: 
+                &copy; {new Date().getFullYear()} Copyright: 
             </p>
             <p>
-                <a href="http://boip.no/">BOIP</a>
+                Made by 
+                <a href="http://boip.no/"> BOIP</a>
             </p>
         </footer>
     );

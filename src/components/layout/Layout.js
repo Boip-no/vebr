@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {
-            BrowserRouter as Router,
-            Switch,
-            Route,
+            BrowserRouter as Router
         } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Home from "../home/Home";
@@ -19,8 +17,7 @@ function Layout({ children }) {
     return (
         
         <Router>   
-            <Navbar variant="light" expand="lg">
-            <div xs={6} lg={0} style={{ backgroundImage:`url(${HeaderImg})` }} className="header__img" alt="hexagons">
+            <Navbar sticky="top" variant="light" expand="lg" xs={6} lg={0} style={{ backgroundImage:`url(${HeaderImg})` }} className="header__img" alt="hexagons">
             <a href="#home"><img className="logo" src={Logo} alt="website logo" /></a>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -36,17 +33,12 @@ function Layout({ children }) {
                         </a>
                     </Nav>
                 </Navbar.Collapse>
-                </div>
             </Navbar>
-            
-                <Switch>
-                    <Route path="/Contact" exact compontent={Contact} />
-                </Switch>
-            <Container>
                     <div className="layout">
                         {children}
                     </div>
                 <Home />
+                <Container>
                 <Work />
                 <SliderContainer />
                 <Contact />

@@ -4,6 +4,13 @@
                     color: $dark-blue;
                     font-size: 2em;
                     padding: 7px;
-                }   
+                }
+                a {
+                    text-decoration: none;
+                    color: $dark-blue;
+                    :hover:active {
+                        color: $wow-blue;
+                    }
+                }  
 }
 

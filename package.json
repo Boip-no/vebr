@@ -8,15 +8,18 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "add-react-component": "^1.1.1",
+    "arrow-keys-react": "^1.0.6",
     "bootstrap": "^4.5.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.8.2",
+    "react-icons": "^3.11.0",
     "react-iframe": "^1.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-sticky-nav": "^4.0.6",
     "yup": "^0.29.3"
   },
   "scripts": {

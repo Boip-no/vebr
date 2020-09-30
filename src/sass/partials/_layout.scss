@@ -3,11 +3,13 @@ body {
     background-color: $background-color;
 }
 
+
 h1 {
     color: $wow-blue;
-    text-shadow: #4A3C29;
-    font-size: 4em;
-    padding: 10px 5px;
+    text-shadow: 0 3px 2px #4A3C29;
+    font-weight: bold;
+    font-style: italic;
+    padding: 100px;
 }
 
 h3 {
@@ -15,4 +17,9 @@ h3 {
     font-size: 3em;
     background-color: $light-blue;
     text-align: center;
+}
+
+h5 {
+    color: $light-blue;
+    padding: 50px;
 }
