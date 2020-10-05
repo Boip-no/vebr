@@ -1,19 +1,24 @@
-.card__header {
+.card {
+    border-color:$wow-blue;
+    
+    &__header {
     background-color: $dark-blue;
-    box-shadow: 5px 5px 15px 21px rgba(137,178,210,1);
-    .btn-link {
-        color: white;
-        text-decoration: none;
-    }
-    .btn-link:hover {
-        color: white;
-        text-decoration: none;
+    box-shadow: 0 3px 6px rgba(137,178,210,1);
+    
+        .btn-link {
+            color: $background-color;
+            text-decoration: none;
+        }
+        .btn-link:hover {
+            color: $background-color;
+            text-decoration: none;
+        }
     }
 }
 
 .card__body {
     background-color: $dark-blue;
-    box-shadow: 10px 10px 5px 0px rgba(137,178,210,1);
+    box-shadow: 10px 10px 5px 0px rgba(97,112,122,1);
     color: $background-color;
         
         &--p {
@@ -24,7 +29,6 @@
             border-color: $wow-blue;
             align-items: center;
             &:hover {
-                
                 background-color: $dark-blue;
                 font-style: italic;
             }

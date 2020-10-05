@@ -10,18 +10,20 @@ import Work from "../work/Work";
 import SliderContainer from "../slider/SliderContainer";
 import Contact from "../contact/Contact";
 import Logo from "../../images/symbol.png";
-import HeaderImg from "../../images/background-colour1db2.jpg";
 import Footer from "../footer/Footer";
 
 function Layout({ children }) {
     return (
         
         <Router>   
-            <Navbar sticky="top" variant="light" expand="lg" xs={6} lg={0} style={{ backgroundImage:`url(${HeaderImg})` }} className="header__img" alt="hexagons">
+            <Navbar sticky="top" variant="light" expand="lg" xs={6} lg={0} >
             <a href="#home"><img className="logo" src={Logo} alt="website logo" /></a>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-center" activeKey="/home">
+                        <a href="#home" className="nav-link">
+                        Home
+                        </a>
                         <a href="#work" className="nav-link">
                         Work/Knowledge
                         </a>

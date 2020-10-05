@@ -8,22 +8,22 @@ header {
     position: sticky;
 }
 .logo {
-    width: 50px;
-    padding: 10px;
+    width: 60px;
+    padding: 5px;
+    padding-left: 20px;
 }
 
 .navbar {
     padding: 0;
+    background-color: $background-color;
 }
 .navbar-toggler {
-    float: right;
     border-color: none;
     padding: 15px;
 }
 
 .navbar-collapse {
     padding: 0 15px;
-    background-color: $light-blue;
 }
 
 .header {
