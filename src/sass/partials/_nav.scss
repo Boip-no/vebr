@@ -8,14 +8,16 @@ header {
     position: sticky;
 }
 .logo {
-    width: 60px;
+    width: 80px;
     padding: 5px;
     padding-left: 20px;
 }
 
 .navbar {
-    padding: 0;
-    background-color: $background-color;
+    background-image: url("../../images/background-colour1db2.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 .navbar-toggler {
     border-color: none;

@@ -16,14 +16,15 @@
     }
 }
 
+.work__name {
+    color: white;
+}
+
 .card__body {
     background-color: $dark-blue;
     box-shadow: 10px 10px 5px 0px rgba(97,112,122,1);
     color: $background-color;
         
-        &--p {
-            text-shadow: $light-blue;   
-        }
         Button {
             background-color: $dark-blue;
             border-color: $wow-blue;

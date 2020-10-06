@@ -1,6 +1,7 @@
 .contact {
        
     &__form--control {
+        margin: -8px;
         background-color: $dark-blue; 
         color: $background-color;
         border-color: $wow-blue;
@@ -9,4 +10,18 @@
 
 .error {
     color: red;
+    margin: 5px;
+}
+
+.contact--btn {
+    border-radius: 10px;
+    background-color: $wow-blue;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &:hover {
+        background-color: $light-blue;
+        color: $dark-blue;
+        font-style: italic;
+    }
 }

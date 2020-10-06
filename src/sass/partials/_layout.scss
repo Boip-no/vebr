@@ -1,5 +1,4 @@
 body {
-    font-family: $subtitle-font;
     background-color: $background-color;
 }
 
@@ -8,6 +7,7 @@ body {
 }
 
 h1 {
+    font-family: $title-font;
     color: $wow-blue;
     text-shadow: 0 3px 2px #4A3C29;
     font-weight: bold;
@@ -15,14 +15,16 @@ h1 {
     padding: 100px;
 }
 
-h3 {
+h2 {
     font-family: $header-font;
-    font-size: 3em;
     background-color: $light-blue;
+    margin-top: 25px;
+    padding: 2px;
     text-align: center;
 }
 
-h5 {
+h3 {
+    font-family: $header-font;
     color: $light-blue;
-    padding: 50px;
+    text-align: center;
 }

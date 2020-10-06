@@ -1,15 +1,22 @@
 .carousel__item {
-    width: fit-content;
-    
-        &--img {
-            width: 100%;
-        }
+    min-height: 400px;
+    background-image: url("../../images/stars.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
 }
 
 .carousel__caption {
     text-align: left;
-    
-        &--content{
+    overflow: hidden;
+        &--content {
             color: white;
+        }
+        &--mainTxt {
+            font-size: 1.1em;
+        }
+        &--firmNameText {
+            text-align: right;
         }
 }

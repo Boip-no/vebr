@@ -1,82 +1,74 @@
 import React from 'react';
 import Search from "./Search";
+import MoreLessBtn from "./MoreLessBtn";
 import { Accordion, Card, Button } from 'react-bootstrap';
 
 function Work(){
     return(
             <div id="work">
-                <h3>Work</h3>
-                <Accordion className="p-5" defaultActiveKey="0">
+                <h2>Work</h2>
+                <Accordion defaultActiveKey="0">
                     <Card>
                         <Card.Header className="card__header">
                             <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                <p>Envo</p>
+                                <h3 className="work__name">Envo</h3>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
                             <Card.Body className="card__body">
-                                Envo AS, Barkåker — Programvareutvikler Juni 2018 - Nå Webutvikling. Opprettelse auto-genererte rapporter. Brannmur, intern og ekstern support, utforming av intern formell dokumentasjon (PP, EULA, Databehandleravtale, GDPR), prosessoptimalisering, integrering, oversettelser. Teknologier: C#, ASP.NET
+                               <p> Envo AS, Barkåker — Programvareutvikler Juni 2018 - Nå Webutvikling. Opprettelse auto-genererte rapporter. Brannmur, intern og ekstern support, utforming av intern formell dokumentasjon (PP, EULA, Databehandleravtale, GDPR), prosessoptimalisering, integrering, oversettelser. Teknologier: C#, ASP.NET</p>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
                         <Card.Header className="card__header">
                             <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                                <p>Visma Rital</p>
+                                <h3 className="work__name">Visma Rital</h3>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">
                             <Card.Body className="card__body">
-                                Visma Retail, Barkåker — Utvikler April 2017 - Desember 2017 Fast 20% stilling i Professional Services. Integrasjon mellom POS og ERP Teknologier: C#, .Net Core, XML, REST, JavaScript, HTML5, CSS3, JIRA.
+                                <p>Visma Retail, Barkåker — Utvikler April 2017 - Desember 2017 Fast 20% stilling i Professional Services. Integrasjon mellom POS og ERP Teknologier: C#, .Net Core, XML, REST, JavaScript, HTML5, CSS3, JIRA.</p>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                 </Accordion>
-            <h3>Knowledge</h3>
+            <h2>Knowledge</h2>
                 <Search />
-                <Accordion className="p-5" defaultActiveKey="1">
+                <Accordion defaultActiveKey="1">
                     <Card>
                         <Card.Header className="card__header">
                             <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                                <p>Languages</p>
+                                <h3 className="work__name">Languages</h3>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="3">
                             <Card.Body className="card__body">
-                                <p className="card__body--p">Envo</p>
-                                <p className="card__body--p">Envo</p>
-                                <p className="card__body--p">Envo</p>
-                                <Button >see more</Button>
+                                <MoreLessBtn >See more</MoreLessBtn>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
                         <Card.Header className="card__header">
                             <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                                <p>Technology</p>
+                                <h3 className="work__name">Technology</h3>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="4">
                             <Card.Body className="card__body">
-                                <p className="card__body--p">Envo</p>
-                                <p className="card__body--p">Envo</p>
-                                <p className="card__body--p">Envo</p>
-                                <Button>see more</Button>
+                                <MoreLessBtn>See more</MoreLessBtn>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card>
                         <Card.Header className="card__header">
                             <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                                <p>Utilities</p>
+                                <h3 className="work__name">Utilities</h3>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="5">
                             <Card.Body className="card__body">
-                                <p className="card__body--p">JIRA</p>
-                                <p className="card__body--p">Envo</p>
-                                <p className="card__body--p">Envo</p>
-                                <Button>see more</Button>
+                                <MoreLessBtn>See more</MoreLessBtn>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>

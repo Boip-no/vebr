@@ -1,23 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// import { Languages } from "./json/languages.json";
+// import { Technologies } from './json/technologies.json';
+// import { Utilities } from './json/utilities.json';
 
 const maxItem = 3;
 
 class MoreLessBtn extends React.Component {
     componentWillMount() {
-        this.setState = {
+        this.setState({
             isOpen: false,
-        };
-        this.items = [
-            "C#",
-            "JavaScript",
-            "Java",
-            "Python",
-            "JIRA",
-        ];
+        });
+        
     }
     toggle = () => {
-        this.setState({ isOpen: !this.state.isOpen });
+        this.setState({ 
+            isOpen: !this.state.isOpen 
+        });
     }
 
     getRenderedItem() {
@@ -30,11 +29,14 @@ class MoreLessBtn extends React.Component {
     render() {
         return(
             <div>
-                {this.getRenderedItem().map((item, id) => (
-                    <div key={id}>{item}</div>
-                ))}
-                <button onClick={this.Toggle}>
-                    {this.state.isOpen ? "See less" : "See more"}</button>
+                
+                <button onClick={this.toggle}>
+                    {this.state.isOpen ? "See less" : "See more"}
+                    {this.state.isOpen ? this.getRenderedItem().map((item, id) => (<div key={id}>{item}</div>)) : ""}
+                </button>
+                
+                {/* <div><Languages /></div> */}
+
             </div>
         );
     }
