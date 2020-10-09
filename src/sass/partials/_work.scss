@@ -1,9 +1,11 @@
 .card {
     border-color:$wow-blue;
+    margin: 10px 35px;
+    filter: drop-shadow(10px 10px 5px 0px grey);
     
     &__header {
     background-color: $dark-blue;
-    box-shadow: 0 3px 6px rgba(137,178,210,1);
+    padding: 0;
     
         .btn-link {
             color: $background-color;
@@ -20,9 +22,12 @@
     color: white;
 }
 
+.accordion {
+    filter: drop-shadow( rgba(97,112,122,1));
+}
+
 .card__body {
     background-color: $dark-blue;
-    box-shadow: 10px 10px 5px 0px rgba(97,112,122,1);
     color: $background-color;
         
         Button {

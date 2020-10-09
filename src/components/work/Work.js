@@ -23,7 +23,7 @@ function Work(){
                     <Card>
                         <Card.Header className="card__header">
                             <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                                <h3 className="work__name">Visma Rital</h3>
+                                <h3 className="work__name">Visma Retail</h3>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">

@@ -4,19 +4,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
 }
 
 .carousel__caption {
     text-align: left;
     overflow: hidden;
+    
         &--content {
             color: white;
+            font-size: 0.8em;
         }
         &--mainTxt {
-            font-size: 1.1em;
+            font-size: 1em;
         }
         &--firmNameText {
             text-align: right;
+            font-size: 0.8em;
         }
 }

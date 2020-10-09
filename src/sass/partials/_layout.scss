@@ -1,5 +1,7 @@
 body {
     background-color: $background-color;
+    font-family: $sub-font;
+    text-align: center;
 }
 
 .container {
@@ -24,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font-family: $header-font;
+    font-family: $title-font;
     color: $light-blue;
     text-align: center;
 }

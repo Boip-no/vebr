@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import {
             BrowserRouter as Router
         } from "react-router-dom";
+import Container from "react-bootstrap/Container";
 import Home from "../home/Home";
 import Work from "../work/Work";
 import SliderContainer from "../slider/SliderContainer";
@@ -39,9 +40,11 @@ function Layout({ children }) {
                         {children}
                     </div>
                 <Home />
-                <Work />
-                <SliderContainer />
-                <Contact />
+                
+                    <Work />
+                    <SliderContainer />
+                    <Contact />
+                
             <Footer />
         </Router>
     );
