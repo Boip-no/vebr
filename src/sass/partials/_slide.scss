@@ -1,9 +1,17 @@
 .carousel__item {
     min-height: 400px;
-    background-image: url("../../images/stars.jpg");
+    background-image: url("../../images/planet-1990280_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &--img {
+        min-height: 400px;
+        background-image: url("../../images/planet-1051946_1920.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .carousel__caption {

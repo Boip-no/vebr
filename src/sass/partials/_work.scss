@@ -1,13 +1,11 @@
-.card {
-    border-color:$wow-blue;
+.card__header {
     margin: 10px 35px;
-    filter: drop-shadow(10px 10px 5px 0px grey);
-    
-    &__header {
+    filter: drop-shadow(5px 5px 4px rgba(97,112,122,1));
     background-color: $dark-blue;
-    padding: 0;
+    border-color: rgba(97,112,122,1);
+    border-radius: 0;
     
-        .btn-link {
+    .btn-link {
             color: $background-color;
             text-decoration: none;
         }
@@ -15,15 +13,10 @@
             color: $background-color;
             text-decoration: none;
         }
-    }
 }
 
 .work__name {
     color: white;
-}
-
-.accordion {
-    filter: drop-shadow( rgba(97,112,122,1));
 }
 
 .card__body {

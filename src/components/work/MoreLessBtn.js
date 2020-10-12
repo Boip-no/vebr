@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import { Languages } from "./json/languages.json";
-// import { Technologies } from './json/technologies.json';
-// import { Utilities } from './json/utilities.json';
+// import Languages from "../../constants/languages";
+// import Technologies from "../../constants/technologies"
+// import Utilities from "../../constants/utilities"
 
 const maxItem = 3;
 
@@ -35,7 +35,7 @@ class MoreLessBtn extends React.Component {
                     {this.state.isOpen ? this.getRenderedItem().map((item, id) => (<div key={id}>{item}</div>)) : ""}
                 </button>
                 
-                {/* <div><Languages /></div> */}
+                <div></div>
 
             </div>
         );

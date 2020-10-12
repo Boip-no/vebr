@@ -1,11 +1,26 @@
 .contact {
-    text-align: left;
-    &__form--control {
-        margin: -8px;
-        background-color: $dark-blue; 
-        color: $background-color;
-        border-color: $wow-blue;
-        
+   &__form {
+        text-align: left;
+
+        .contact--btn {
+            border-radius: 10px;
+            background-color: $wow-blue;
+            margin-bottom: 20px;
+            text-align: center;
+            &:hover {
+                background-color: $dark-blue;
+                color: $light-blue;
+                font-style: italic;
+            }
+        }
+
+        &--control {
+            margin: -8px;
+            background-color: $dark-blue; 
+            color: $background-color;
+            border-color: rgba(97,112,122,1);
+            
+        }
     }
 }
 
@@ -14,14 +29,3 @@
     margin: 5px;
 }
 
-.contact--btn {
-    border-radius: 10px;
-    background-color: $wow-blue;
-    margin-bottom: 20px;
-
-    &:hover {
-        background-color: $light-blue;
-        color: $dark-blue;
-        font-style: italic;
-    }
-}

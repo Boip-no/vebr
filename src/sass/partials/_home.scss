@@ -4,4 +4,15 @@
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+
+    h1 {
+        text-align: left;
+        padding: 330px 0px 36px 21px;
+        text-shadow: 0 3px 2px #000000;
+    }
+
+    &__img h3 {
+        padding-left: 91px;
+        padding-top: 75px;
+    }
 }

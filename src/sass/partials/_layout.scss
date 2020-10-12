@@ -11,7 +11,6 @@ body {
 h1 {
     font-family: $title-font;
     color: $wow-blue;
-    text-shadow: 0 3px 2px #4A3C29;
     font-weight: bold;
     font-style: italic;
     padding: 100px;
@@ -20,7 +19,8 @@ h1 {
 h2 {
     font-family: $header-font;
     background-color: $light-blue;
-    margin-top: 25px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     padding: 2px;
     text-align: center;
 }
@@ -28,5 +28,5 @@ h2 {
 h3 {
     font-family: $title-font;
     color: $light-blue;
-    text-align: center;
+    text-align: left;
 }

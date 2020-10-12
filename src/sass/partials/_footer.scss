@@ -1,16 +1,19 @@
-.icons__footer {
-    background-color: #D5D9DB;
-                &--item {
-                    color: $dark-blue;
-                    font-size: 2em;
-                    padding: 7px;
-                }
-                a {
-                    text-decoration: none;
-                    color: $dark-blue;
-                    :hover:active {
-                        color: $wow-blue;
-                    }
-                }  
+footer {
+    margin-top: 20px;
 }
 
+.icons__footer {
+    background-color: #D5D9DB;
+        &--item {
+            color: $dark-blue;
+            font-size: 2em;
+            padding: 7px;
+        }
+        a {
+            text-decoration: none;
+            color: $dark-blue;
+            :hover:active {
+                color: $wow-blue;
+            }
+        }  
+}
