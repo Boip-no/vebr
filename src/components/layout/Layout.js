@@ -12,10 +12,10 @@ import Logo from "../../images/symbol.png";
 import Footer from "../footer/Footer";
 import Knowledge from "../knowledge/Knowledge";
 
-function Layout({ children }) {
+function Layout() {
     return (
         
-        <Router>   
+        <Router>
             <Navbar sticky="top" variant="light" expand="lg" xs={6} lg={0} >
             <a href="#home"><img className="logo" src={Logo} alt="website logo" /></a>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -36,16 +36,11 @@ function Layout({ children }) {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-                    <div className="layout">
-                        {children}
-                    </div>
                 <Home />
-                
-                    <Work />
-                    <Knowledge />
-                    <SliderContainer />
-                    <Contact />
-                
+                <Work />
+                <Knowledge />
+                <SliderContainer />
+                <Contact />
             <Footer />
         </Router>
     );

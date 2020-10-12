@@ -8,6 +8,7 @@
     .btn-link {
             color: $background-color;
             text-decoration: none;
+            padding-left: 35px;
         }
         .btn-link:hover {
             color: $background-color;
@@ -19,17 +20,3 @@
     color: white;
 }
 
-.card__body {
-    background-color: $dark-blue;
-    color: $background-color;
-        
-        Button {
-            background-color: $dark-blue;
-            border-color: $wow-blue;
-            align-items: center;
-            &:hover {
-                background-color: $dark-blue;
-                font-style: italic;
-            }
-        }
-}

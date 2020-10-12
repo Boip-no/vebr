@@ -6,10 +6,15 @@ function Technologies() {
     return( 
         <Row className="knowledge">
             {technologies.map((tech, index) =>
-                <Col md={12} key={index}>
-                    <h5>    {tech.name} {tech.skill}    </h5>
-                </Col>
-            )}
+                <>
+                    <Col className="knowledge--body" md={8} key={index}>
+                        <h5>    {tech.name}   </h5>
+                    </Col>
+                    <Col md={4}>
+                        <h5>     {tech.skill}   </h5>
+                    </Col>
+                </>
+                )}
         </Row>
     );
 

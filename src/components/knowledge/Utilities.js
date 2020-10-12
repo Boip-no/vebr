@@ -5,10 +5,15 @@ import utilities from "../../constants/utilities";
 function Utilities() {
     return(
         <Row className="knowledge">
-            {utilities.map((utilitie, indexUti) => 
-                <Col md={12} key={indexUti}>
-                    <h5>    {utilitie.name} {utilitie.skill}    </h5>
-                </Col>
+            {utilities.map((utilitie, index) => 
+                <>
+                    <Col className="knowledge--body" md={8} key={index}>
+                        <h5>{utilitie.name}</h5>
+                    </Col>
+                    <Col md={4}>
+                        <h5>{utilitie.skill}</h5>
+                    </Col>
+                </>
             )}
         </Row>
     );
