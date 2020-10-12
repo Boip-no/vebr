@@ -1,6 +1,4 @@
 import React from 'react';
-import Search from "./Search";
-import MoreLessBtn from "./MoreLessBtn";
 import { Accordion, Card, Button, Container } from 'react-bootstrap';
 
 function Work(){
@@ -31,44 +29,8 @@ function Work(){
                         </Card>
                     </Accordion>
                 </Container>
-            <h2>Knowledge</h2>
-                <Container>
-                    <Search />
-                    <Accordion defaultActiveKey="1">
-                        <Card className="card__header">
-                            <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                                <h3 className="work__name">Languages</h3>
-                            </Accordion.Toggle>
-                        <Accordion.Collapse eventKey="3">
-                            <Card.Body className="card__body">
-                                <MoreLessBtn >See more</MoreLessBtn>
-                            </Card.Body>
-                        </Accordion.Collapse>
-                        </Card>
-                        <Card className="card__header">
-                                <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                                    <h3 className="work__name">Technology</h3>
-                                </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="4">
-                                <Card.Body className="card__body">
-                                    <MoreLessBtn>See more</MoreLessBtn>
-                                </Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                        <Card className="card__header">
-                            <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                                <h3 className="work__name">Utilities</h3>
-                            </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="5">
-                                <Card.Body className="card__body">
-                                    <MoreLessBtn>See more</MoreLessBtn>
-                                </Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion> 
-                </Container>
             </div>
-    )
+    );
 }
 
 export default Work;

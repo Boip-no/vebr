@@ -1,42 +1,42 @@
 export default [
 	{
-		"Name": "ASP.NET",
-		"Skill": 3
+		"name": "ASP.NET",
+		"skill": 3
 	},
 	{
-		"Name": ".NET CORE",
-		"Skill": 3
+		"name": ".NET CORE",
+		"skill": 3
 	},
 	{
-		"Name": "Json",
-		"Skill": 4
+		"name": "Json",
+		"skill": 4
 	},
 	{
-		"Name": "XML",
-		"Skill": 3
+		"name": "XML",
+		"skill": 3
 	},
 	{
-		"Name": "REST",
-		"Skill": 2
+		"name": "REST",
+		"skill": 2
 	},
 	{
-		"Name": "Swagger",
-		"Skill": 1
+		"name": "Swagger",
+		"skill": 1
 	},
 	{
-		"Name": "FTP/SFTP",
-		"Skill": 2
+		"name": "FTP/SFTP",
+		"skill": 2
 	},
 	{
-		"Name": "MSMQ",
-		"Skill": 1
+		"name": "MSMQ",
+		"skill": 1
 	},
 	{
-		"Name": "Bootstrap",
-		"Skill": 3
+		"name": "Bootstrap",
+		"skill": 3
 	},
 	{
-		"Name": "MSSQL",
-		"Skill": 3
+		"name": "MSSQL",
+		"skill": 3
 	}
 ]

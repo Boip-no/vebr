@@ -1,38 +1,38 @@
 export default [
 	{
-		"Name": "C#",
-		"Skill": 4
+		"name": "C#",
+		"skill": 4
 	},
 	{
-		"Name": "MSSQL",
-		"Skill": 4
+		"name": "MSSQL",
+		"skill": 4
 	},
 	{
-		"Name": "JavaScript",
-		"Skill": 3
+		"name": "JavaScript",
+		"skill": 3
 	},
 	{
-		"Name": "Java",
-		"Skill": 2
+		"name": "Java",
+		"skill": 2
 	},
 	{
-		"Name": "HTML",
-		"Skill": 3
+		"name": "HTML5",
+		"skill": 3
 	},
 	{
-		"Name": "CSS",
-		"Skill": 3
+		"name": "CSS3",
+		"skill": 3
 	},
 	{
-		"Name": "PHP",
-		"Skill": 2
+		"name": "PHP",
+		"skill": 2
 	},
 	{
-		"Name": "English",
-		"Skill": 5
+		"name": "English",
+		"skill": 5
 	},
 	{
-		"Name": "Norwegian",
-		"Skill": 5
+		"name": "Norwegian",
+		"skill": 5
 	}
 ]

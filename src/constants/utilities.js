@@ -1,34 +1,34 @@
 export default  [
   {
-    "Name":"Jira",
-    "Skill": 4
+    "name":"Jira",
+    "skill": 4
   },
   {
-    "Name":"Confluence",
-    "Skill": 4
+    "name":"Confluence",
+    "skill": 4
   },
   {
-    "Name":"Microsoft SQL Management Studio",
-    "Skill": 2
+    "name":"Microsoft SQL Management Studio",
+    "skill": 2
   },
   {
-    "Name":"Kanban",
-    "Skill": 3
+    "name":"Kanban",
+    "skill": 3
   },
   {
-    "Name":"Agile Project Management",
-    "Skill": 4
+    "name":"Agile Project Management",
+    "skill": 4
   },
   {
-    "Name":"SCRUM",
-    "Skill": 4
+    "name":"SCRUM",
+    "skill": 4
   },
   {
-    "Name":"Entrepreneurship",
-    "Skill": 3
+    "name":"Entrepreneurship",
+    "skill": 3
   },
   {
-    "Name":"Intreapreneurship",
-    "Skill": 3
+    "name":"Intreapreneurship",
+    "skill": 3
   }
 ]

@@ -6,10 +6,11 @@ import {
         } from "react-router-dom";
 import Home from "../home/Home";
 import Work from "../work/Work";
-import SliderContainer from "../slider/SliderContainer";
+import SliderContainer from "../carousel/CarouselContainer";
 import Contact from "../contact/Contact";
 import Logo from "../../images/symbol.png";
 import Footer from "../footer/Footer";
+import Knowledge from "../knowledge/Knowledge";
 
 function Layout({ children }) {
     return (
@@ -41,6 +42,7 @@ function Layout({ children }) {
                 <Home />
                 
                     <Work />
+                    <Knowledge />
                     <SliderContainer />
                     <Contact />
                 
