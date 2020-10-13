@@ -2,13 +2,16 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {
-            BrowserRouter as Router
+            BrowserRouter as Router,
+            Switch,
+            Route
         } from "react-router-dom";
 import Home from "../home/Home";
 import Work from "../work/Work";
-import SliderContainer from "../carousel/CarouselContainer";
+import HackersDetail from "../hackers/HackersDetail";
+import CarouselContainer from "../carousel/CarouselContainer";
 import Contact from "../contact/Contact";
-import Logo from "../../images/symbol.png";
+import Logo from "../../images/logo.png";
 import Footer from "../footer/Footer";
 import Knowledge from "../knowledge/Knowledge";
 
@@ -36,10 +39,13 @@ function Layout() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+                <Switch>
+                    <Route path="/character/:id" component={HackersDetail} />
+                </Switch>
                 <Home />
                 <Work />
                 <Knowledge />
-                <SliderContainer />
+                <CarouselContainer />
                 <Contact />
             <Footer />
         </Router>

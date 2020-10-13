@@ -1,13 +1,13 @@
 .carousel__item {
     min-height: 400px;
-    background-image: url("../../images/smart-725843_1280.jpg");
+    background-image: url("../../images/markus-spiske-QozzJpFZ2lg-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     &--img {
         min-height: 400px;
-        background-image: url("../../images/smiley-2979107_1920.jpg");
+        background-image: url("../../images/smart-725843_1280.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -16,7 +16,6 @@
 
 .carousel__caption {
     text-align: left;
-    overflow: hidden;
     color: black;
     
         &--content {

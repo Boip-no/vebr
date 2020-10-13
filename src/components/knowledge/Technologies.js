@@ -5,6 +5,7 @@ import technologies from '../../constants/technologies';
 
 function Technologies() {
     return( 
+    <>
         <Row className="knowledge">
             {technologies.map((tech, index) =>
                 <>
@@ -26,6 +27,7 @@ function Technologies() {
                 </>
                 )}
         </Row>
+    </>
     );
 
 }

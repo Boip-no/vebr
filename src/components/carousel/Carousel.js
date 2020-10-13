@@ -20,7 +20,7 @@ function Slider({ content1, content2, client1, client2, firm1, firm2 }) {
                     <Carousel.Item className="carousel__item--img ">
                         <Carousel.Caption className="carousel__caption">
                             <p className="carousel__caption--content">{client2}</p>
-                            <p className="carousel__caption--mainTxt">{content2}</p>
+                            <h4 className="carousel__caption--mainTxt">{content2}</h4>
                             <p className="carousel__caption--firmNameText">{firm2}</p>
                         </Carousel.Caption>
                     </Carousel.Item>

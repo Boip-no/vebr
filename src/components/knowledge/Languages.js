@@ -1,7 +1,6 @@
 import React from 'react';
 import languages from '../../constants/languages';
 import { BiRadioCircleMarked, BiRadioCircle } from "react-icons/bi";
-// import Skill from "./Skill";
 import { Row, Col } from 'react-bootstrap';
 
 function Languages() {
@@ -29,7 +28,6 @@ function Languages() {
             )}
         </Row>
     );
-
 }
 
 export default Languages;
