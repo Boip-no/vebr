@@ -15,13 +15,13 @@ function Utilities() {
 {
     // if-else statement 
 }   
-                    <h4>{
+                    <h3>{
                         utility.skill > 0 ?  <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 1 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 2 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 3 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />
-                    } </h4>
+                    } </h3>
                     </Col>
                 </>
             )}

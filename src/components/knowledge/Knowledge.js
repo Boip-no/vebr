@@ -1,5 +1,4 @@
 import React from "react";
-import Search from "./Search";
 import { Accordion, Card, Button, Container } from 'react-bootstrap';
 import Languages from "./Languages";
 import Technologies from "./Technologies";
@@ -10,7 +9,6 @@ function Knowledge() {
         <>
             <h2>Knowledge</h2>
             <Container>
-                <Search />
                 <Accordion defaultActiveKey="1">
                     <Card className="card__header">
                         <Accordion.Toggle as={Button} variant="link" eventKey="3">
@@ -28,7 +26,7 @@ function Knowledge() {
                             </Accordion.Toggle>
                         <Accordion.Collapse eventKey="4">
                             <Card.Body className="card__body">
-                                <Technologies />                        
+                                <Technologies />                    
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>

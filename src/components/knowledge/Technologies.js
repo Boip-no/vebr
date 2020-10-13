@@ -15,13 +15,13 @@ function Technologies() {
 {
     // if-else statement 
 } 
-                    <h4> {
+                    <h3> {
                         tech.skill > 0 ?  <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 1 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 2 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 3 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />
-                    }</h4>
+                    }</h3>
                     </Col>
                 </>
                 )}

@@ -1,6 +1,5 @@
 .contact {
    &__form {
-        text-align: left;
 
         .contact--btn {
             border-radius: 10px;
@@ -22,6 +21,10 @@
             
         }
     }
+}
+
+.form-group {
+    text-align: left;
 }
 
 .error {

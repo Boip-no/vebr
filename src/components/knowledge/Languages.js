@@ -16,14 +16,14 @@ function Languages() {
 {
     // if-else statement 
 } 
-                <h4>{
+                <h3>{
                     language.skill > 0 ? <BiRadioCircleMarked /> 
                     : <BiRadioCircle />}
                     {language.skill > 1 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                     {language.skill > 2 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                     {language.skill > 3 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                     {language.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />
-                } </h4>
+                } </h3>
                 </Col>
             </>
             )}

@@ -1,5 +1,5 @@
 .card__header {
-    margin: 10px 35px;
+    margin-top: 10px;
     filter: drop-shadow(5px 5px 4px rgba(97,112,122,1));
     background-color: $dark-blue;
     border-color: rgba(97,112,122,1);
@@ -11,7 +11,7 @@
             padding-left: 35px;
         }
         .btn-link:hover {
-            color: $background-color;
+            color: $dark-blue;
             text-decoration: none;
         }
 }

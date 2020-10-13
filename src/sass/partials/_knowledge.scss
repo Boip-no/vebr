@@ -2,20 +2,16 @@
     background-color: $dark-blue;
     color: $background-color;
     padding: 0;
-        
-        Button {
-            background-color: $dark-blue;
-            border-color: $wow-blue;
-            align-items: center;
-            &:hover {
-                background-color: $dark-blue;
-                font-style: italic;
-            }
-        }
 }
 
-.knowledge--body {
-    text-align: left;
-    padding-left: 55px;
-    margin-bottom: 10px;
+.knowledge {
+    &--body {
+        text-align: left;
+        padding-left: 55px;
+        margin-bottom: 10px;
+    }
+
+    .col-md-4 {
+        text-align: center;
+    }
 }
