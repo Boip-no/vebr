@@ -18,11 +18,14 @@
     text-align: left;
     color: black;
     
+    
         &--content {
             font-size: 0.8em;
         }
         &--mainTxt {
             font-size: 1em;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px $light-blue;
         }
         &--firmNameText {
             text-align: right;

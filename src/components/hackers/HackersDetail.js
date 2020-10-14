@@ -20,11 +20,11 @@ function HackersDetail() {
         .catch(error => console.log(error))
         .finally(() => setLoading(false));
     }, );
-
+    
     if (loading) {
         return <Spinner animation="border" className="Spinner" />
     }
-
+    
     return (
         <Row>
             <Col md={6} className="detail-image">

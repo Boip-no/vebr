@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CharacterItem from "./CharacterItem";
+import HackerItem from "./HackerItem";
 import { BASE_URL } from "../../constants/api";
 import Search from "./Search";
 
@@ -57,7 +57,7 @@ function HackersList() {
 
                     return (
                         <Col sm={6} md={3} key={id}>
-                            <CharacterItem id={id} name={name} image={image} />
+                            <HackerItem id={id} name={name} image={image} />
                         </Col>
                     );
                 })}

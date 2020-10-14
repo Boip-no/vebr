@@ -40,7 +40,7 @@ function Layout() {
                 </Navbar.Collapse>
             </Navbar>
                 <Switch>
-                    <Route path="/character/:id" component={HackersDetail} />
+                    <Route path="/hackerNews/:id" component={HackersDetail} />
                 </Switch>
                 <Home />
                 <Work />

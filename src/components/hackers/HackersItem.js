@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-function CharacterItem({ id, name, image }) {
+function HackersItem({ id, name, image }) {
     return (
         <Card>
             <Card.Img variant="top" src={image} />
@@ -20,11 +20,11 @@ function CharacterItem({ id, name, image }) {
     ); 
 }
 
-CharacterItem.propTypes = {
+HackersItem.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired
 };
 
 
-export default CharacterItem;
+export default HackersItem;
