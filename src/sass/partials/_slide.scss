@@ -1,13 +1,13 @@
 .carousel__item {
     min-height: 400px;
-    background-image: url("../../images/markus-spiske-QozzJpFZ2lg-unsplash.jpg");
-    background-position: center;
+    background-image: url("../../images/technology-785742_1280.jpg");
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 
     &--img {
         min-height: 400px;
-        background-image: url("../../images/smart-725843_1280.jpg");
+        background-image: url("../../images/suit-673697_12803.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,7 +25,7 @@
         &--mainTxt {
             font-size: 1em;
             font-weight: bold;
-            text-shadow: 2px 2px 6px rgb(209, 74, 74);
+            text-shadow: 2px 2px 6px $grey;
         }
         &--firmNameText {
             text-align: right;

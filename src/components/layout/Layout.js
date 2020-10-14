@@ -5,11 +5,10 @@ import {
             BrowserRouter as Router,
             Switch,
             Route,
-            //NavLink
         } from "react-router-dom";
 import Home from "../home/Home";
 import Work from "../work/Work";
-// import HackersDetail from "../hackers/HackersDetail";
+import HackerNews from "../news/HackerNews";
 import CarouselContainer from "../carousel/CarouselContainer";
 import Contact from "../contact/Contact";
 import Logo from "../../images/logo.png";
@@ -37,20 +36,15 @@ function Layout() {
                         <a href="#contact" className="nav-link">
                         Contact
                         </a>
-                        {/* <NavLink href="/hackersNews" className="nav-link">
-                        Contact
-                        </NavLink> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-                {/* <Switch>
-                    <Route path="/hackerNews/:id" component={HackersDetail} />
-                </Switch> */}
                 <Home />
                 <Work />
                 <Knowledge />
                 <CarouselContainer />
                 <Contact />
+                <HackerNews />
             <Footer />
         </Router>
     );
