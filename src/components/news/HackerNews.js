@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import HackerNewsItem from "./HackerNewsItem";
 import { HACKERS_URL } from "../../constants/api";
 
@@ -17,6 +16,7 @@ function HackerNews() {
             .finally(() => setLoading(false));
     }, []);
 
+    // spining border
     if (loading) {
         return <Spinner animation="border" className="Spinner" />;
     }
@@ -31,7 +31,12 @@ function HackerNews() {
         return items;
     }
 
-    return <Row>{renderNews()}</Row>;
+    return (
+        <>
+            <h2>Hackers news</h2>
+                <Row>{renderNews()}</Row>
+        </>         
+    );
 }
 
 export default HackerNews;

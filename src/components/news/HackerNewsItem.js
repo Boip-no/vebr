@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Spinner from "react-bootstrap/Spinner";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 function HackerNewsItem({ newsItemId }) {
     const [news, setNews] = useState({});
@@ -20,21 +20,23 @@ function HackerNewsItem({ newsItemId }) {
             })
             .catch((error) => console.log(error))
             .finally(() => setLoading(false));
-    }, []);
+    });
 
     if (loading) {
         return <Spinner animation="border" className="Spinner" />;
     }
 
     return (
-        <Col>
-            <div className="news-item">
-                <h5>{news.title}</h5>
-                <a href={news.url} target="_blank" rel="noopener noreferrer">
-                    Read the full story
-                </a>
-            </div>
-        </Col>
+        <Container>
+            <Card xs={12} md={6} className="card__header">
+                <div className="news--item">
+                    <h5>{news.title}</h5>
+                    <a href={news.url} target="_blank" rel="noopener noreferrer">
+                        <Button className="btn-link">Read the full story</Button>
+                    </a>
+                </div>
+            </Card>
+        </Container>
     );
 }
 

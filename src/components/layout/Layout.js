@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {
-            BrowserRouter as Router,
-            Switch,
-            Route,
+            BrowserRouter as Router
         } from "react-router-dom";
 import Home from "../home/Home";
 import Work from "../work/Work";
