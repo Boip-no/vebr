@@ -16,7 +16,7 @@
 
 .carousel__caption {
     text-align: left;
-    color: black;
+    color: white;
     
     
         &--content {
@@ -25,7 +25,7 @@
         &--mainTxt {
             font-size: 1em;
             font-weight: bold;
-            text-shadow: 2px 2px 6px $light-blue;
+            text-shadow: 2px 2px 6px rgb(209, 74, 74);
         }
         &--firmNameText {
             text-align: right;

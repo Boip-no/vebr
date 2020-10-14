@@ -4,11 +4,12 @@ import Nav from "react-bootstrap/Nav";
 import {
             BrowserRouter as Router,
             Switch,
-            Route
+            Route,
+            //NavLink
         } from "react-router-dom";
 import Home from "../home/Home";
 import Work from "../work/Work";
-import HackersDetail from "../hackers/HackersDetail";
+// import HackersDetail from "../hackers/HackersDetail";
 import CarouselContainer from "../carousel/CarouselContainer";
 import Contact from "../contact/Contact";
 import Logo from "../../images/logo.png";
@@ -36,12 +37,15 @@ function Layout() {
                         <a href="#contact" className="nav-link">
                         Contact
                         </a>
+                        {/* <NavLink href="/hackersNews" className="nav-link">
+                        Contact
+                        </NavLink> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-                <Switch>
+                {/* <Switch>
                     <Route path="/hackerNews/:id" component={HackersDetail} />
-                </Switch>
+                </Switch> */}
                 <Home />
                 <Work />
                 <Knowledge />
