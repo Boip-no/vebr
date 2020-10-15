@@ -7,9 +7,9 @@ function Technologies() {
     return( 
     <>
         <Row className="knowledge">
-            {technologies.map((tech, index) =>
+            {technologies.map((tech, indexTech) =>
                 <>
-                    <Col className="knowledge--body" md={8} key={index}>
+                    <Col className="knowledge--body" md={8} key={indexTech}>
                         <h5>    {tech.name}   </h5>
                     </Col>
                     <Col md={4}>

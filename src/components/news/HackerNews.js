@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Spinner from "react-bootstrap/Spinner";
-import Row from "react-bootstrap/Row";
+import { Row, Container } from "react-bootstrap";
 import HackerNewsItem from "./HackerNewsItem";
 import { HACKERS_URL } from "../../constants/api";
 
@@ -23,19 +23,19 @@ function HackerNews() {
 
     function renderNews() {
         let items = [];
-        console.log(newsList);
-        for (let i = 0; i < 7; i++) {
-            console.log(newsList[i]);
+    //    console.log(newsList);
+        for (let i = 0; i < 9; i++) {
+    //        console.log(newsList[i]);
             items.push(<HackerNewsItem newsItemId={newsList[i]} key={newsList[i]} />);
         }
         return items;
     }
 
     return (
-        <>
+        <Container>
             <h2>Hackers news</h2>
                 <Row>{renderNews()}</Row>
-        </>         
+        </Container>         
     );
 }
 

@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 function Languages() {
     return( 
         <Row className="knowledge">
-            {languages.map((language, index) => 
+            {languages.map((language, index ) => 
             <>
                 <Col className="knowledge--body" md={8} key={index}>
                     <h5>    {language.name}   </h5>

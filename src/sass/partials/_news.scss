@@ -1,0 +1,23 @@
+.news--item {
+    color: $background-color;
+    padding: 15px;
+}
+
+.card__header--news {
+    margin: 5px;
+    filter: drop-shadow(5px 5px 4px rgba(97,112,122,1));
+    background-color: $dark-blue;
+    border-color: rgba(97,112,122,1);
+    border-radius: 0;
+    
+    .btn-link {
+            color: $background-color;
+            text-decoration: none;
+            background-color: $wow-blue;
+        }
+        .btn-link:hover {
+            color: $dark-blue;
+            text-decoration: none;
+            background-color: $light-blue;
+        }
+}
