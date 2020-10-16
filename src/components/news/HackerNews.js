@@ -48,11 +48,12 @@ function HackerNews() {
 // render(<AlertErrors />);
 
     return (
-        <Container>
-            <h2>Hackers news</h2>
-                <Row>{renderNews()}</Row>
-        </Container>  
-
+        <>
+            <h2 id="news">Hackers news</h2>
+            <Container>
+                    <Row>{renderNews()}</Row>
+            </Container>  
+        </>
     );
 }
 

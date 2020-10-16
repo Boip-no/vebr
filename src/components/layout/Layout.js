@@ -22,9 +22,6 @@ function Layout() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav activeKey="/home">
-                        <a href="#home" className="nav-link">
-                        Home
-                        </a>
                         <a href="#work" className="nav-link">
                         Work/Knowledge
                         </a>
@@ -34,6 +31,10 @@ function Layout() {
                         <a href="#contact" className="nav-link">
                         Contact
                         </a>
+                        <a href="#news" className="nav-link">
+                        Hacker News
+                        </a>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
