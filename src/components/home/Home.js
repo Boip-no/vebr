@@ -9,7 +9,7 @@ function Home() {
     return (
         <Jumbotron fluid id="home" xs={6} md={4} lg={3} className="header">
             <div className="header__img" alt="Hexagons">
-                <HeaderContainer title="Vegard Pihl Bratteng" subtitle="Professional IT solution" />
+                <HeaderContainer title="Vegard Pihl Bratteng" subtitle="Professional IT solutions" />
                 <a className="header--icon" href="#work"><IoIosArrowDropdownCircle /></a>
             </div>
         </Jumbotron>

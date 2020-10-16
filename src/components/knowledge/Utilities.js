@@ -5,27 +5,24 @@ import utilities from "../../constants/utilities";
 
 function Utilities() {
     return(
-        <Row className="knowledge">
-            {utilities.map((utility, index) => 
-                <>
-                    <Col className="knowledge--body" md={8} key={index}>
-                        <h5>{utility.name}</h5>
-                    </Col>
-                    <Col md={4}>
-{
-    // if-else statement 
-}   
-                    <h3>{
-                        utility.skill > 0 ?  <BiRadioCircleMarked /> : <BiRadioCircle />}
+    <>
+        {utilities.map((utility, index) => 
+            <Row className="knowledge" key={index}>
+                <Col className="knowledge--body" md={8}>
+                    <h5>{utility.name}</h5>
+                </Col>
+                <Col md={4}>
+                    <h3>
+                        {utility.skill > 0 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 1 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 2 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {utility.skill > 3 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
-                        {utility.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />
-                    } </h3>
-                    </Col>
-                </>
-            )}
-        </Row>
+                        {utility.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />} 
+                    </h3>
+                </Col>
+            </Row>
+        )}
+    </>
     );
 }
 

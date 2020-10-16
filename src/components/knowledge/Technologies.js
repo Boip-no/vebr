@@ -6,27 +6,22 @@ import technologies from '../../constants/technologies';
 function Technologies() {
     return( 
     <>
-        <Row className="knowledge">
-            {technologies.map((tech, indexTech) =>
-                <>
-                    <Col className="knowledge--body" md={8} key={indexTech}>
-                        <h5>    {tech.name}   </h5>
-                    </Col>
-                    <Col md={4}>
-{
-    // if-else statement 
-} 
-                    <h3> {
-                        tech.skill > 0 ?  <BiRadioCircleMarked /> : <BiRadioCircle />}
+        {technologies.map((tech, index) =>
+            <Row className="knowledge" key={index}>
+                <Col className="knowledge--body" md={8} key={index}>
+                    <h5>    {tech.name}   </h5>
+                </Col>
+                <Col md={4}>
+                    <h3> 
+                        {tech.skill > 0 ?  <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 1 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 2 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
                         {tech.skill > 3 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
-                        {tech.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />
-                    }</h3>
-                    </Col>
-                </>
-                )}
-        </Row>
+                        {tech.skill > 4 ? <BiRadioCircleMarked /> : <BiRadioCircle />}
+                    </h3>
+                </Col>
+            </Row>
+        )}  
     </>
     );
 

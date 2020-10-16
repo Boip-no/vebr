@@ -31,11 +31,28 @@ function HackerNews() {
         return items;
     }
 
+//     function AlertErrors() {
+//         const [show, setShow] = useState(true);
+
+
+//         if (show) {
+//             return (
+//                 <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+//                     <Alert.Heading>Oh snap! there is an error!</Alert.Heading>
+//                     <p>I do not know how to fix it, my cpu caled brain is overheated.</p>
+//                 </Alert>
+//             );
+//         }
+//         return <Button onClick={() => setShow(true)}>Show Alert</Button>;
+//     }
+// render(<AlertErrors />);
+
     return (
         <Container>
             <h2>Hackers news</h2>
                 <Row>{renderNews()}</Row>
-        </Container>         
+        </Container>  
+
     );
 }
 
