@@ -24,7 +24,7 @@ function HackerNews() {
     function renderNews() {
         let items = [];
     //    console.log(newsList);
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 6; i++) {
     //        console.log(newsList[i]);
             items.push(<HackerNewsItem newsItemId={newsList[i]} key={newsList[i]} />);
         }

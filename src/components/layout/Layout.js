@@ -20,8 +20,8 @@ function Layout() {
             <Navbar sticky="top" variant="light" expand="lg" xs={6} lg={0} >
             <a href="#home"><img className="logo" src={Logo} alt="website logo" /></a>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="justify-content-center" activeKey="/home">
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+                    <Nav activeKey="/home">
                         <a href="#home" className="nav-link">
                         Home
                         </a>

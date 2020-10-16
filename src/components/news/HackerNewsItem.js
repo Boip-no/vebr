@@ -27,7 +27,7 @@ function HackerNewsItem({ newsItemId }) {
     }
 
     return (
-            <Card className="card__header--news" style={{  width: "18rem"   }}>
+            <Card className="card__header--news" style={{width: "18rem"}}>
                 <Card.Body className="news--item">
                     <h5>{news.title}</h5>
                     <a href={news.url} target="_blank" rel="noopener noreferrer">
