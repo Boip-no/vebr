@@ -10,13 +10,13 @@
     }
 
     &--icon {
-        color: $light-blue;
-        font-size: 80px;
+        color: $wow-blue;
+        font-size: 50px;
     }
     @media only screen and (min-width: 800px) {
-        background-image: url("../../images/technology-785742_12802.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+            background-image: url("../../images/technology-785742_12802.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
     }
 }

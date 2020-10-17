@@ -1,6 +1,7 @@
 import React from "react";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+// import ErrorMessage from "./ErrorMessage";
 import Iframe from "react-iframe";
 import {Col, 
         Form, 
@@ -9,10 +10,10 @@ import {Col,
         Row} from "react-bootstrap";
 
 export default function Contact() {
-    const { handleSubmit, register } = useForm();
+    const { handleSubmit, register, /* errors */ } = useForm();
     function sendEmail(e) {
 
-      emailjs.sendForm('service_br0glnq', 'template_1wfjs3m', e.target, 'user_YxJjY8QiXlh2Wc8LNtrUn')
+      emailjs.sendForm('service_br0glnq', 'template_1wfjs3m', 'user_YxJjY8QiXlh2Wc8LNtrUn')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -26,7 +27,7 @@ export default function Contact() {
             <Container>
                     <Row>
                     <Col xs={12} md={6}>
-                        <Form className="contact__form" onSubmit={handleSubmit && sendEmail}>
+                        <Form className="contact__form" onSubmit={handleSubmit(sendEmail)}>
                             <Form.Group>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type="text" className="contact__form--control" name="from_name" ref={register({required: true, minLength: 3})} />
@@ -35,16 +36,20 @@ export default function Contact() {
                             <Form.Group>
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control type="email" className="contact__form--control" name="user_email" ref={register({required: true})} />
+                                {/* {errors.user_email && errors.user_email.type === "required" && <ErrorMessage name="user_email" as="p" childer="This is required" />} */}
                             </Form.Group>
                             
                             <Form.Group>
                                 <Form.Label>Phone</Form.Label>
                                 <Form.Control type="number" className="contact__form--control" name="user_number" ref={register({required: true})} />
+                                {/* {errors.user_number && errors.user_number.type === "required" && <ErrorMessage name="user_number" as="p" childer="This is required" />} */}
                             </Form.Group>
 
                             <Form.Group>
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control className=" contact__form--control" name="message" placeholder="Get in touch!" ref={register({required: true, minlength: 5})} />
+                                {/* {errors.message && errors.message.type === "required" && <ErrorMessage name="message" as="p" children="This is required" />}
+                                {errors.message && errors.message.type === "minlength" && <ErrorMessage name="message" as="p" children="Please type a longer message" />} */}
                             </Form.Group>
 
                             <Button value="Send" className="contact--btn" type="submit">Get in touch!</Button>

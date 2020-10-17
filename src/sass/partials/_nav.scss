@@ -10,7 +10,7 @@
     background-image: url("../../images/background-colour1db2.jpg");
     background-size: cover;
     background-position-y: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
 .navbar-toggler {
@@ -20,16 +20,6 @@
 
 .navbar-collapse {
     padding: 0 15px;
-}
-
-.header {
-    &--icon {
-        color: $wow-blue;
-        font-size: 50px;
-    }
-    @media only screen and (min-width: 800px) {
-        background-color: white;
-    }
 }
 
 .navbar-toggler-icon {
