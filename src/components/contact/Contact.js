@@ -11,7 +11,7 @@ import {Col,
 
 export default function Contact() {
     const { handleSubmit, register, /* errors */ } = useForm();
-    function sendEmail(e) {
+    function sendEmail() {
 
       emailjs.sendForm('service_br0glnq', 'template_1wfjs3m', 'user_YxJjY8QiXlh2Wc8LNtrUn')
         .then((result) => {
@@ -36,13 +36,13 @@ export default function Contact() {
                             <Form.Group>
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control type="email" className="contact__form--control" name="user_email" ref={register({required: true})} />
-                                {/* {errors.user_email && errors.user_email.type === "required" && <ErrorMessage name="user_email" as="p" childer="This is required" />} */}
+                                {/* {errors.user_email && errors.user_email.type === "required" && <ErrorMessage name="user_email" as="p" children="This is required" />} */}
                             </Form.Group>
                             
                             <Form.Group>
                                 <Form.Label>Phone</Form.Label>
                                 <Form.Control type="number" className="contact__form--control" name="user_number" ref={register({required: true})} />
-                                {/* {errors.user_number && errors.user_number.type === "required" && <ErrorMessage name="user_number" as="p" childer="This is required" />} */}
+                                {/* {errors.user_number && errors.user_number.type === "required" && <ErrorMessage name="user_number" as="p" children="This is required" />} */}
                             </Form.Group>
 
                             <Form.Group>
