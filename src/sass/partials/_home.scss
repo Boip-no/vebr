@@ -4,13 +4,13 @@
     background-position: center;
     background-repeat: no-repeat;
     h1 {
-        text-shadow: -5px 3px 6px #000000;
+        text-shadow: -1px 3px 6px #000000;
     }
 
     &--icon {
         color: $wow-blue;
         border: rgba(97,112,122,1);
         font-size: 50px;
-        filter: drop-shadow(-5px 3px 6px #000000);
+        filter: drop-shadow(-1px 3px 6px #000000);
     }
 }

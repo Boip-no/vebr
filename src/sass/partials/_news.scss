@@ -6,7 +6,7 @@
     margin: 2em;
     margin-left: auto;
     margin-right: auto;
-    filter: drop-shadow(5px 5px 4px rgba(97,112,122,1));
+    filter: drop-shadow(-5px 5px 4px rgba(97,112,122,1));
     background-color: $dark-blue;
     border-color: rgba(97,112,122,1);
     border-radius: 0;
@@ -15,6 +15,7 @@
             color: $background-color;
             text-decoration: none;
             background-color: $wow-blue;
+            filter: drop-shadow(-1px 1px 4px rgba(97,112,122,1));
         }
         .btn-link:hover {
             color: $dark-blue;

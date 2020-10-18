@@ -2,10 +2,10 @@
    &__form {
 
         .contact--btn {
-            border-radius: 10px;
-            border-color: $wow-blue;
+            background-color: $wow-blue;
             margin-bottom: 20px;
             text-align: center;
+            filter: drop-shadow(-5px 5px 4px rgba(97,112,122,1));
             &:hover {
                 background-color: $dark-blue;
                 color: $light-blue;
@@ -26,8 +26,8 @@
     text-align: left;
 }
 
-.error {
-    color: red;
-    margin: 5px;
-}
+// .error {
+//     color: red;
+//     margin: 5px;
+// }
 
