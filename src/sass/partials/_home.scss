@@ -1,22 +1,16 @@
 .header {
     height: 100vh;
     background-image: url("../../images/background-colour1db2.jpg");
-    background-position: bottom;
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
     h1 {
         text-shadow: -5px 3px 6px #000000;
     }
 
     &--icon {
         color: $wow-blue;
+        border: rgba(97,112,122,1);
         font-size: 50px;
-    }
-    @media only screen and (min-width: 800px) {
-            background-image: url("../../images/technology-785742_12802.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+        filter: drop-shadow(-5px 3px 6px #000000);
     }
 }

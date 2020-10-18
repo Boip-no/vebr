@@ -1,12 +1,11 @@
 .card__body {
     background-color: $dark-blue;
     color: $background-color;
-    padding: 0;
+    padding: 10px;
 }
 
 .knowledge {
     &--body {
-        padding-left: 55px;
         margin-top: 15px;
     }
 

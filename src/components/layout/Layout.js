@@ -17,7 +17,7 @@ function Layout() {
     return (
         
         <Router>
-            <Navbar sticky="top" variant="light" expand="lg" xs={6} lg={0} >
+            <Navbar sticky="top" variant="dark" expand="lg" xs={6} lg={0} >
             <a href="#home"><img className="logo" src={Logo} alt="website logo" /></a>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">

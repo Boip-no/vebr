@@ -3,7 +3,7 @@
 
         .contact--btn {
             border-radius: 10px;
-            background-color: $wow-blue;
+            border-color: $wow-blue;
             margin-bottom: 20px;
             text-align: center;
             &:hover {
@@ -15,9 +15,8 @@
 
         &--control {
             margin: -8px;
-            background-color: $dark-blue; 
-            color: $background-color;
-            border-color: rgba(97,112,122,1);
+            border: 2px solid;
+            border-color: $dark-blue;
             
         }
     }

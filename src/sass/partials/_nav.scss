@@ -4,13 +4,15 @@
 .logo {
     width: 120px;
     padding-left: 20px;
+    filter: drop-shadow(1px 1px 4px $background-color);
 }
-
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: transparent;
+}
 .navbar {
     background-image: url("../../images/background-colour1db2.jpg");
-    background-size: cover;
-    background-position-y: center;
-    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .navbar-toggler {
@@ -26,11 +28,14 @@
     color: $dark-blue;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: white;
     &:hover {
         background-color: $dark-blue;
         color: white;
         font-style: italic;
     }
+}
+button:focus {
+    outline: none;
 }
